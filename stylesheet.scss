@@ -1,5 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@use '../AtsiskaitymasCSS/css/colors.scss' as *;
+
+
+
+h1 {
+ color: $dark1;
+}
+
+h2 {
+    color: $dark1;
+}
+
+h3 {
+    color: $Pink;
 }
