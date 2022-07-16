@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>CSS Atsiskaitymas</title>
 </head>
 <body>
@@ -34,15 +35,19 @@
                     <div class="hero_grid3">
                         <button>Sign Up</button>
                     </div>
-                    <div class="hero_grid4"><img src="/img/hero.png" alt="hero">
-                    </div>
+                    <picture class="hero_grid4">
+                            <source media="(min-width:1140px"
+                                    srcset="/img/hero.png">
+                            <source srcset="/img/hero-mobile.png">
+                        <img src="/img/hero.png" alt="hero">
+                    </picture> 
             </section>
     </div>
         <section>
             <div class="upsell"> 
                 <div class="gradient fill">
                     <div class="upsell_content">
-                        <h2>Free NFT for early<br>birds</h2>
+                        <h3>Free NFT for early<br>birds</h3>
                         <p>Sign up today and you’ll get a free NFT when we launch.</p>
                     </div>
                 </div>
@@ -51,14 +56,18 @@
         <div class="content_wrapper">
             <section class="press">
                 <div class="press_wrapper">
-                    <div class="press_icon1"><img src="img/presslogo1.svg"></div>
-                    <div class="press_icon2"><img src="img/presslogo2.svg"></div>
-                    <div class="press_icon3"><img src="img/presslogo3.svg"></div>
-                    <div class="press_icon4"><img src="img/presslogo4.svg"></div>
-                    <div class="press_icon5"><img src="img/presslogo5.svg"></div>
+                    <div class="press_icon1"><a href="#"><img src="img/presslogo1.svg"></a></div>
+                    <div class="press_icon2"><a href="#"><img src="img/presslogo2.svg"></a></div>
+                    <div class="press_icon3"><a href="#"><img src="img/presslogo3.svg"></a></div>
+                    <div class="press_icon4"><a href="#"><img src="img/presslogo4.svg"></a></div>
+                    <div class="press_icon5"><a href="#"><img src="img/presslogo5.svg"></a></div>
                 </div>
             </section>
-            <section>
+            <section class="showcase_section">
+                <div class="showcase_header">
+                    <h3>LE Super Rare Auction</h3>
+                    <p>We have released four limited edition NFTs early which can be bid on via <span><a href="#">OpenSea.</a></span></p>
+                </div>
                 <div class="showcase-wrapper">
                         <div class="showcase-container-gallery">
                             <img src="/img/ntf1.svg" alt="1">
@@ -67,7 +76,7 @@
                                     <p1>GLOOP SERIES</p1>
                                 </div>
                                 <div class="showcase_text2">
-                                    <p1>TOP BID</p1>
+                                    <p4>TOP BID</p4>
                                 </div>
                                 <div class="showcase_text3">
                                     <p2>Purple Man</p2>
@@ -91,7 +100,7 @@
                                     <p1>GLOOP SERIES</p1>
                                 </div>
                                 <div class="showcase_text2">
-                                    <p1>TOP BID</p1>
+                                    <p4>TOP BID</p4>
                                 </div>
                                 <div class="showcase_text3">
                                     <p2>Beige</p2>
@@ -115,7 +124,7 @@
                                     <p1>GLOOP SERIES</p1>
                                 </div>
                                 <div class="showcase_text2">
-                                    <p1>TOP BID</p1>
+                                    <p4>TOP BID</p4>
                                 </div>
                                 <div class="showcase_text3">
                                     <p2>Red Man</p2>
@@ -139,7 +148,7 @@
                                     <p1>GLOOP SERIES</p1>
                                 </div>
                                 <div class="showcase_text2">
-                                    <p1>TOP BID</p1>
+                                    <p4>TOP BID</p4>
                                 </div>
                                 <div class="showcase_text3">
                                     <p2>Green</p2>
@@ -157,15 +166,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="footer_upsell">
                 <div class="upsell_grid1">
                     <h4>Launching Soon</h4>
                 </div>
                 <div class="upsell_grid2">
-                    <h2>An NFT like<br>no other</h2>
-                    <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
+                    <h2>An NFT like no other</h2>
+                    <p>Don’t miss out on the release of our new NFT. Sign up <br>below to receive updates when we go live.
                     </p>
                 </div>
                 <div class="upsell_grid3">
@@ -176,46 +184,64 @@
         </section>
         </div>
     </main>
-    <footer>
-        <img class="logo" src="img/logo.svg">
-        <p>Exclusive NFT Collection</p>
-        ikonos
-        <div class="footer_list_wrapper">
-            <div class="footer_list">
-                <h5>about</h5>
-                <ul>
-                   <li>About</li>
-                   <li>Terms</li>
-                   <li>Legal</li>
-                </ul>
+    <div class="content_wrapper">
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer_main">
+                    <img class="logo" src="img/logo.svg">
+                    <p>Exclusive NFT Collection</p>
+                    <div class="icons"><a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-github"></a>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <div class="footer_list">
+                        <div>
+                            <h5>about</h5>
+                            <ul>
+                               <li><a href="#">About</a></li>
+                               <li><a href="#">Terms</a></li>
+                               <li><a href="#">Legal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_list">
+                        <div>
+                            <h5>nft</h5>
+                            <ul>
+                               <li><a href="#">OpenSea</a></li>
+                               <li><a href="#">Maker</a></li>
+                               <li><a href="#">Learn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_list">
+                        <div>
+                            <h5>contact</h5>
+                            <ul>
+                               <li><a href="#">Press</a></li>
+                               <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_list">
+                        <div>
+                            <h5>social</h5>
+                            <ul>
+                               <li><a href="#">Twitter</a></li>
+                               <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer_list">
-                <h5>nft</h5>
-                <ul>
-                   <li>OpenSea</li>
-                   <li>Maker</li>
-                   <li>Learn</li>
-                </ul>
+            <div class="copyrights_wrapper">
+                <p>© Copyright 2022 NFTlanding</p>
+                <p>Launching August 2022</p>
             </div>
-            <div class="footer_list">
-                <h5>contact</h5>
-                <ul>
-                   <li>Press</li>
-                   <li>Support</li>
-                </ul>
-            </div>
-            <div class="footer_list">
-                <h5>social</h5>
-                <ul>
-                   <li>Twitter</li>
-                   <li>Instagram</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyrights_wrapper">
-            <p>© Copyright 2022 NFTlanding</p>
-            <p>Launching August 2022</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
